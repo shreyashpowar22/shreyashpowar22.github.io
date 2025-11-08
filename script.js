@@ -2,6 +2,14 @@
 const navLinks = document.querySelector(".nav-links");
 const navToggle = document.createElement("div");
 
+const DownloadCVButton = document.getElementById("download_cv");
+
+DownloadCVButton.addEventListener('click',()=>{
+    // view the pdf file 
+    window.open("./src/Shreyash_Powar_Resume.pdf", "_blank");
+})
+
+
 navToggle.classList.add("menu-toggle");
 navToggle.innerHTML = "☰";
 document.querySelector(".navbar").appendChild(navToggle);
